@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Register from "./Register";
+
 export default function Login() {
   return (
     <div className="login-page">
@@ -8,7 +11,7 @@ export default function Login() {
         <span className="input-error text-small">Invalid email</span>
         <input type="password" placeholder="***********"/>
         <button button-type='primary'>Sign in</button>
-        <a href="/register" className="fw-700 text-small">Need an account?</a>
+        <Link to={"/register"} className="fw-700 text-small">Need an account?</Link>
       </form>
     </div>
   </div>

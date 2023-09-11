@@ -1,0 +1,92 @@
+.thread {
+    position: relative;
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    grid-template-rows: 29px auto repeat(1, 1fr);
+    margin-inline: auto;
+    border-bottom: 1px solid gray;
+    padding: 2rem 0rem;
+}
+
+.thread-card-avatar {
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.thread-card-avatar>img {
+    border-radius: 100%;
+    height: 2rem;
+}
+
+.thread-card-avatar>.thread-card-avatar-add-icon {
+    position: absolute;
+    bottom: -30%;
+    right: 30%;
+    height: 1rem;
+    fill: rgb(16, 16, 16);
+    background: white;
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    width: 1rem;
+}
+
+.thread-upper {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.thread-upper-username {
+    color: rgb(243, 245, 247);
+    font-size: 0.9rem;
+}
+
+.thread-upper-timeago {
+    font-size: 0.9rem;
+    color: rgb(119, 119, 119);
+}
+
+.thread-border {
+    padding-top: 1rem;
+    color: rgb(51, 54, 56);
+    margin-left: 0.3rem;
+}
+
+.thread-text {
+    color: rgb(243, 245, 247);
+    line-height: calc(1.4 * 1em);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.thread-button {
+    color: gray;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+.thread-button:hover {
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+
+.thread-buttons {
+    margin-block: 1rem;
+}
+
+.thread-comments-bar {
+    color: rgb(119, 119, 119);
+    font-size: 0.9rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.thread-reply-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}

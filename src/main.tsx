@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Login from './views/Login.tsx';
 import {
+  BrowserRouter,
   createBrowserRouter,
-  RouterProvider,
 } from "react-router-dom";
-import NavigationBar from './components/NavigationBar.tsx';
+import App from '../src/app.tsx';
 import Register from './views/Register.tsx';
 import Dashboard from './views/Dashboard.tsx';
 
@@ -31,7 +31,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <NavigationBar />
-    <RouterProvider router={router} />
+    <BrowserRouter >
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 )
