@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Login from './views/Login.tsx';
+import Login from './views/Login';
 import {
   BrowserRouter,
   createBrowserRouter,
 } from "react-router-dom";
-import App from '../src/app.tsx';
-import Register from './views/Register.tsx';
-import Dashboard from './views/Dashboard.tsx';
+import App from '../src/app';
+import Register from './views/Register';
+import Dashboard from './views/Dashboard';
 
 import TimeAgo from 'javascript-time-ago'
 
