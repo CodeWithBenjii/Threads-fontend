@@ -6,6 +6,7 @@
     margin-inline: auto;
     border-bottom: 1px solid gray;
     padding: 2rem 0rem;
+    max-width: 40rem;
 }
 
 .thread-card-avatar {
